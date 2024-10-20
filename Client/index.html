@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Commander</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Drone Commander</h1>
+    </header>
+    
+    <div id="config">
+        <h2>View Config</h2>
+    </div>
+
+    <div id="logging">
+        <h2>Temperature Log Form</h2>
+        <form id="my-form" method="post">
+            <label for="temperature">Temperature: </label>
+            <input type="number" name="temperature" id="temperature" value="25" required>
+            <button type="submit">Submit Temperature</button>
+        </form>
+    </div>
+    
+    <div id="logs">
+        <h2>View Logs</h2>
+        <table id="logTable">
+            <thead>
+                <tr>
+                    <th>Created</th>
+                    <th>Country</th>
+                    <th>Drone ID</th>
+                    <th>Drone Name</th>
+                    <th>Celsius</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="status"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
